@@ -17,6 +17,16 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+
+        setIdentity()
+    }
+
+    fun setIdentity(){
+        val name: TextView = findViewById(R.id.name)
+        val nim: TextView = findViewById(R.id.nim)
+
+        name.text = "Angger Binuko"
+        nim.text = "12345678"
     }
 
     /**
